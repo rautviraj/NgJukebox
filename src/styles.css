@@ -163,3 +163,84 @@
   .fav-icon:before{
     border-bottom: 6px solid #D9D900 !important;
   }
+
+/*Carousel arrow style*/
+
+  .car-right-rectangle {
+    height: 9px;
+    width: 15px;
+    margin-top: 5px;
+    background-color: #EEE;
+    float: left;
+  }
+  
+  .car-right-triangle {
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-left: 12px solid #EEE;
+      border-bottom: 10px solid transparent;
+      float: left;
+  }
+
+  .car-right-arrow-box{
+      border: 1px solid #00698C;
+      background-color: #00698C;
+      border-radius: 5px;
+      display: inline-block;
+      padding: 5px 3px;
+  }
+
+  .car-right-arrow-box:hover{
+      background-color: #0085B2;
+      border: 1px solid #0085B2;
+  }
+
+  .car-right-arrow-box:hover .car-right-triangle{
+      border-top: 10px solid transparent;
+      border-left: 12px solid #EEE;
+      border-bottom: 10px solid transparent;
+  }
+
+  .car-right-arrow-box:hover .car-right-rectangle{
+      background-color: #EEE;
+  }
+  
+  
+.car-left-arrow-box{
+	border: 1px solid #DDD;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px 3px;
+}
+
+.car-left-rectangle {
+  height: 9px;
+  width: 15px;
+  margin: 5px 0 0 12px;
+  background-color: #DDD;
+  float: left;
+}
+
+.car-left-triangle {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-right: 12px solid #DDD;
+	border-bottom: 10px solid transparent;
+}
+
+.car-left-arrow-box:hover{
+	background-color: #0085B2;
+    border: 1px solid #0085B2;
+}
+
+.car-left-arrow-box:hover .car-left-rectangle {
+  background-color: #EEE;
+}
+
+.car-left-arrow-box:hover .car-left-triangle{
+	border-top: 10px solid transparent;
+	border-right: 12px solid #EEE;
+	border-bottom: 10px solid transparent;
+}
