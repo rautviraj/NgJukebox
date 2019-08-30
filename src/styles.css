@@ -1,14 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 .box{
     width: 220px !important;
-    /* height:400px !important; */
     padding: 10px 15px;
 }
 
 .li_container{
     box-align: center;
 }
-.li_container h5,p{
+
+.li_container h5{
+    text-align: center;
+    margin: 0 30px;
+}
+
+.li_container p{
     text-align: center;
 }
 
@@ -20,20 +25,34 @@
 }
 
 .a-cover{
-    transform: scale(0.6);
+    transform: scale(0.8);
 }
 
 .a-title{
     text-transform: uppercase;
+    color: #0085B2;
+    font-size: initial;
+    font-weight: initial;
 }
 
 .a-artist{
     text-transform: uppercase;
+    color: #000000;
+    font-size: smaller;
 }
 
 .t-track-list{
     border: 1px solid grey;
     padding: 5px;
+} 
+
+.t-track-list:hover{
+    background-color: #0085B2;
+    color:white !important;
+} 
+
+.t-track-list:hover span{
+    color:white !important;
 } 
 
 .t-track-list span{
@@ -45,10 +64,12 @@
     padding: 2px 5px;
     background-color: #90B9c9;
     float: left;
+    color: white;
 }
 
 .t-track-name{
     text-transform: uppercase;
+    color: #0085B2;
 }
 
 .t-song-label{
@@ -60,10 +81,18 @@
     background-color: #0085B2 !important;
 }
 
+.active>.li_container>.a-title {
+    color: white !important;
+}
+
+.active>.li_container>.a-artist {
+    color: white !important;
+    font-size: smaller;
+}
+
 .t-duration{
     float: right;
 }
-
 
 /* Create Star shape */
 .five-point-star {
@@ -123,6 +152,7 @@
     transform: rotate(290deg);
     z-index:9999;
   }
+
 
   .fav-icon{
     border-bottom: 6px solid #D9D900 !important;
