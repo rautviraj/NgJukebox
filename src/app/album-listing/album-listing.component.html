@@ -1,0 +1,29 @@
+
+<div class="container">
+
+    <div class="button" (click)="shiftLeft()"><img src="https://image.ibb.co/mRsEb7/left_arrow.png" alt=""></div>
+
+    <div class="cards-wrapper">
+        <ul class="cards__container">
+            <li *ngFor = "let album of albums; let i = index;" 
+                class= "box" 
+                [class.active]="i==2" 
+                [attr.albumId]="album.id" >
+                <div style="display: inline-block; padding: 2px;" class="li_container">
+                    <img src="{{ album.cover_photo_url }}" class="a-cover">
+                    <h5 class="a-title">{{ album.name }}</h5>
+                    <p class="a-artist">{{ album.artist_name }}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="button" (click)="shiftRight()"><img src="https://image.ibb.co/dfPSw7/right_arrow.png" alt=""></div>
+
+</div>
+
+<div class="trackList" style="transform:translateY(100px);">
+
+        <app-track-listing #currentAlbumTracks></app-track-listing>
+
+</div>

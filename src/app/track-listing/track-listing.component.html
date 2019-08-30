@@ -1,0 +1,17 @@
+
+<!-- 
+    Displays all the tracks for current album
+ -->
+
+<div class="track-container">
+    <div class="t-track-list" *ngFor = "let track of tracks; let i = index">
+        <span class="t-song-id">{{ i + 1 }}</span>
+        <span   class="five-point-star"
+                (click)="track.status=! track.status"  
+                [ngClass]="track.status ? 'fav-icon' : 'danger'">
+        </span>
+        <span class="t-track-name">{{ track.song_name }}</span>
+        <span class="t-song-label" *ngFor = "let label of track.song_label"> {{ label }}</span>
+        <span class="t-duration">{{ track.song_duration }}</span>
+    </div>
+</div>
